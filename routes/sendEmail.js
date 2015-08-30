@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require("nodemailer");
 
-exports.sendQuote = function(firstName, lastName, streetAddress, city, state, zipCode, daytimePhone, eveningPhone, emailAddress, comments, onResult) {
+exports.sendQuote = function(firstName, lastName, streetAddress, city, state, zipCode, phoneNumber, emailAddress, comments, onResult) {
     // create reusable transporter object using SMTP transport
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
@@ -20,7 +20,7 @@ exports.sendQuote = function(firstName, lastName, streetAddress, city, state, zi
         from: 'Brenden McKamey <brenden.mckamey@gmail.com>', // sender address
         to: 'brenden.mckamey@gmail.com', // list of receivers
         subject: 'ScreensOnsite Quote Information', // Subject line
-        text: 'First Name: ' + firstName + '\n' + 'Last Name: ' + lastName + '\n' + 'Street Address: ' + streetAddress + '\n' + 'City: ' + city + '\n' + 'State: ' + state + '\n' + 'Zip Code: ' + zipCode + '\n' + 'Daytime Phone: ' + daytimePhone + '\n' + 'Evening Phone: ' + eveningPhone + '\n' + 'Email Address: ' + emailAddress + '\n' + 'Comments: ' + comments, // plaintext body
+        text: 'First Name: ' + firstName + '\n' + 'Last Name: ' + lastName + '\n' + 'Street Address: ' + streetAddress + '\n' + 'City: ' + city + '\n' + 'State: ' + state + '\n' + 'Zip Code: ' + zipCode + '\n' + 'Phone Number: ' + phoneNumber + '\n' + 'Email Address: ' + emailAddress + '\n' + 'Comments: ' + comments, // plaintext body
     };
 
     // send mail with defined transport object

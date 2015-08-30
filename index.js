@@ -1,10 +1,15 @@
 var express = require('express')
-    , sendEmail = require('./routes/sendEmail.js');
+    , sendEmail = require('./routes/sendEmail.js')
+    , bodyParser = require('body-parser');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
@@ -18,19 +23,18 @@ app.get('/quote', function(request, response) {
   response.render('pages/quote');
 });
 
-app.get('/submitQuote', function(request, response) {
-    var firstName = request.query.firstName
-    var lastName = request.query.lastName
-    var streetAddress = request.query.streetAddress
-    var city = request.query.city
-    var state = request.query.state
-    var zipCode = request.query.zipCode
-    var daytimePhone = request.query.daytimePhone
-    var eveningPhone = request.query.eveningPhone
-    var emailAddress = request.query.emailAddress
-    var comments = request.query.comments
+app.post('/submitQuote', function(request, response) {
+    var firstName = request.body.firstName
+    var lastName = request.body.lastName
+    var streetAddress = request.body.streetAddress
+    var city = request.body.city
+    var state = request.body.state
+    var zipCode = request.body.zipCode
+    var phoneNumber = request.body.phoneNumber
+    var emailAddress = request.body.emailAddress
+    var comments = request.body.comments
     
-    sendEmail.sendQuote(firstName, lastName, streetAddress, city, state, zipCode, daytimePhone, eveningPhone, emailAddress, comments, function(statusCode, result) {
+    sendEmail.sendQuote(firstName, lastName, streetAddress, city, state, zipCode, phoneNumber, emailAddress, comments, function(statusCode, result) {
         console.log("Email sent...");
     })
     response.render('pages/quote');

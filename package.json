@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "ScreensOnsite",
   "version": "0.1.4",
-  "description": "A sample Node.js app using Express 4",
+  "description": "A mobile window screen service.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -9,6 +9,7 @@
   "dependencies": {
     "ejs": "^2.3.1",
     "express": "~4.9.x",
+    "body-parser": "*",
     "nodemailer": "*"
   },
   "engines": {
@@ -16,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/bsmckamey/screensonsite"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "screensonsite",
+    "screens",
+    "window screens"
   ],
   "license": "MIT"
 }
