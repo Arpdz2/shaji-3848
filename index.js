@@ -37,7 +37,11 @@ app.post('/submitQuote', function(request, response) {
     sendEmail.sendQuote(firstName, lastName, streetAddress, city, state, zipCode, phoneNumber, emailAddress, comments, function(statusCode, result) {
         console.log("Email sent...");
     })
-    response.render('pages/quote');
+    response.render('pages/success');
+});
+
+app.get('/success', function(request, response) {
+  response.render('pages/success');
 });
 
 app.listen(app.get('port'), function() {
