@@ -44,6 +44,10 @@ app.get('/success', function(request, response) {
   response.render('pages/success');
 });
 
+app.get('/smallbusiness', function(request, response) {
+    response.render('pages/smallbusiness');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
