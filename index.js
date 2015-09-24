@@ -46,6 +46,12 @@ app.get('/success', function(request, response) {
 
 app.get('/smallbusiness', function(request, response) {
     response.render('pages/smallbusiness');
+    console.log("Rendering small business tab");
+});
+
+app.get('/healthplan', function(request, response) {
+    response.render('pages/healthplan');
+    console.log("Rendering health plan tab");
 });
 
 app.listen(app.get('port'), function() {
