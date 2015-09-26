@@ -59,6 +59,8 @@ app.post('/submitQuote', function(request, response) {
     response.render('pages/success');
 });
 
+require(app, passport);
+
 app.get('/success', function(request, response) {
   response.render('pages/success');
 });
