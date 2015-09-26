@@ -80,7 +80,7 @@ app.get('/loginindex', function(request, response) {
 });
 
 app.get('/login', function(req, res) {
-    response.render('pages/login',{ message: req.flash('loginMessage') });
+    res.render('pages/login',{ message: req.flash('loginMessage') });
     console.log("Rendering login tab");
 });
 
