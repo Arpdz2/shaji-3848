@@ -56,7 +56,12 @@ app.get('/healthplan', function(request, response) {
 
 app.get('/loginindex', function(request, response) {
     response.render('pages/loginindex');
-    console.log("Rendering health plan tab");
+    console.log("Rendering loginindex tab");
+});
+
+app.get('/login', function(request, response) {
+    response.render('pages/login');
+    console.log("Rendering login tab");
 });
 
 

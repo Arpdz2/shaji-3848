@@ -10,6 +10,7 @@ body {
   font-size: 14px;
   line-height: 1.231;
 }
+
 input,
 button,
 select,
@@ -1207,12 +1208,12 @@ section * {
   position: relative;
   max-width: none;
 }
-.content-7 .screen-wrapper .screen img:first-child {
+/*.content-7 .screen-wrapper .screen img:first-child {
   position: absolute;
   left: 0;
   top: 0;
   max-height: 100%;
-}
+}*/
 /**
  * Content 8 stylesheet  
  * */
