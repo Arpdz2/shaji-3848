@@ -54,6 +54,12 @@ app.get('/healthplan', function(request, response) {
     console.log("Rendering health plan tab");
 });
 
+app.get('/loginindex', function(request, response) {
+    response.render('pages/loginindex');
+    console.log("Rendering health plan tab");
+});
+
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
