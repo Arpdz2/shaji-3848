@@ -59,7 +59,6 @@ app.post('/submitQuote', function(request, response) {
     response.render('pages/success');
 });
 
-require(app, passport);
 
 app.get('/success', function(request, response) {
   response.render('pages/success');
@@ -81,14 +80,14 @@ app.get('/loginindex', function(request, response) {
 });
 
 app.get('/login', function(request, response) {
-    response.render('pages/login',{ message: req.flash('loginMessage') });
+    response.render('pages/login');//,{ message: req.flash('loginMessage') });
     console.log("Rendering login tab");
 });
 
 app.get('/signup', function(req, res) {
 
     // render the page and pass in any flash data if it exists
-    res.render('pages/signup', { message: req.flash('signupMessage') });
+    res.render('pages/signup');//, { message: req.flash('signupMessage') });
 });
 
 app.get('/profile', isLoggedIn, function(req, res) {
