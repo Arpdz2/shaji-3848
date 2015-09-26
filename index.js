@@ -87,7 +87,7 @@ app.get('/login', function(request, response) {
 app.get('/signup', function(req, res) {
 
     // render the page and pass in any flash data if it exists
-    res.render('pages/signup');//, { message: req.flash('signupMessage') });
+    res.render('pages/signup'), { message: req.flash('signupMessage') });
 });
 
 app.get('/profile', isLoggedIn, function(req, res) {
