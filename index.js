@@ -2,6 +2,9 @@ var express = require('express')
     , sendEmail = require('./routes/sendEmail.js')
     , bodyParser = require('body-parser');
 var app = express();
+var dbConfig = require('./routes/db.js');
+var mongoose = require('mongoose');
+
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -64,6 +67,7 @@ app.get('/login', function(request, response) {
     console.log("Rendering login tab");
 });
 
+mongoose.connect(dbConfig.url);
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
