@@ -1,196 +1,112 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <% include ../partials/header.ejs %>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SSID Spoofing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+    <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/progresstracker.css" />
+    <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="css/nojs.css" />
+    </noscript>
 </head>
-
 <body>
-    <div class="page-wrapper">
-        <!-- header-10 -->
-        <header class="header-10">
-            <div class="container">
-                <div class="navbar col-sm-12" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle"></button>
-                        <a class="brand" href="/">ACA Insurance Group</a>
-                     </div>
-                    <div class="collapse navbar-collapse pull-right">
-                        <ul class="nav pull-left">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/smallbusiness">Small Business</a></li>
-                            <li><a href="/healthplan">Health Assurance Plan</a></li>
-                        </ul>
-                        <form class="navbar-form pull-left">
-                            <a class="btn btn-success" href="/quote">Contact Us</a>
-                        </form>
-                        <form class="navbar-form pull-left">
-                            <a class="btn btn-success" href="/loginindex">Agent Login</a>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="header-background"></div>
-        </header>
-        <section class="header-10-sub v-center">
-            <div class="background">
-                &nbsp;
-            </div>
-            <div>
-                <div class="container">
-                    <div class="hero-unit">
-                        <h1>Your path to peace of mind</h1>
-                        <p>
-                            Our proven benefit packages can help you
-                            <br/>
-                            through todays benefit twists and turns
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <a class="control-btn fui-arrow-down" href="#"> </a>
-        </section>
+<div class="container">
+    <header>
+        <h1>SSID Spoofing<br><span> aka phony access points, evil twins, or honeypots</span></h1>
+        <h2>Why you should always be sure the access point is legitimate when connecting to a WLAN</h2>
+    </header>
+    <!-- Codrops top bar -->
+    <div class="codrops-top">
+        <div class="clr">
+            <!-- Progress Tracker v2 -->
+            <ol class="progress" data-steps="3">
+                <li class="active" id="introprogress">
+                    <span class="name">Intro</span>
+                    <span class="step"><span>1</span></span>
+                </li>
+                <li class="" id="contentprogress">
+                    <span class="name">Conceptual Content</span>
+                    <span class="step"><span>2</span></span>
+                </li>
+                <li class="" id="demoprogress">
+                    <span class="name">Demo</span>
+                    <span class="step"><span>3</span></span>
+                </li>
+            </ol>
+        </div>
+    </div><!--/ Codrops top bar -->
 
-        <!-- content-7  -->
-        <section class="content-7 v-center">
-            <div>
+    <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+            <h2>Agenda</h2>
+            <p>1. What is SSID Spoofing
+            <br>2. How does it work? (Conceptual)
+            <br>3. How can one avoid revealing information?
+            <br> &emsp; - Https?
+            <br> &emsp;&emsp; - Https flaws
+            <br> &emsp; - VPN
+            <br> 4. How does it work? (Demo)</p>
 
-                <div class="container">
-                    <h3>We are not your normal brokerage</h3>
+            <div class="da-img"><img src="images/1.png" alt="" /></div>
+        </div>
+        <div class="da-slide">
+            <h2>What is SSID Spoofing?</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 
-                    <div class="row v-center">
-                        <div class="col-sm-3">
-                            <div>
-                                ACA takes the time to find the best and most affordable packages for your small business
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="col-sm-offset-1">
-                                <div class="screen-wrapper">
-                                    <div class="screen">
+            <!--<div class="da-img"><img src="images/2.png" alt="image01" /></div>-->
+        </div>
+        <div class="da-slide">
+            <h2>How does it work? (Conceptual)</h2>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 
-                                        <img src="../../common-files/img/content/turnkey.jpg" alt="">
-                                        <img src="../../common-files/img/content/time.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="col-sm-offset-2">
-                                <h6>Save Time</h6>
-                                In that process we seek and find the best programs such as , HR and Administrative time savings, cost management, employee benefits education and retention, and employee protection.
-                                <h6>Solution Ready</h6>
-                                With our turn-key solutions we put much needed capital back in the hands of the small business owner and their employees.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!--<div class="da-img"><img src="images/3.png" alt="image01" /></div>-->
+        </div>
+        <div class="da-slide">
+            <h2> How can one avoid revealing information?</h2>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
 
-        <!-- content-23  -->
-        <section class="content-23 bg-midnight-blue custom-bg">
-            <div class="holder v-center">
-                <div>
-                    <div class="container">
-                        <div class="hero-unit hero-unit-bordered">
-                            <h1>Let us be your Affordable Care Associates</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="control-btn fui-arrow-down" href="#"> </a>
-        </section>
-
-        <!-- content-8  -->
-        <section class="content-8 v-center">
-            <div>
-                <div class="container">
-                    <div class="img">
-                        <img src="../../common-files/img/content/offer.jpg" alt="">
-                    </div>
-                    <h3>Take a look at what we have to offer</h3>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3">
-                            <p>We provide a wide array of solutions
-                            </p>
-                            <a class="btn btn-large btn-clear" href="#">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- content-23  -->
-        <section class="content-23 bg-midnight-blue">
-            <div id="bgVideo" class="background"></div>
-            <div class="holder v-center">
-                <div>
-                    <div class="container">
-                        <div class="hero-unit">
-                            <h1>Find the perfect plans for
-                            <br class="hidden-phone">
-                            your insurance needs</h1>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-            <a class="control-btn fui-arrow-down" href="#"> </a>
-        </section>
-
-        <!-- content-8  -->
-        <section class="content-8 v-center">
-            <div>
-                <div class="container">
-                    <div class="img second">
-                        <img alt="" src="img/aca.png"/>
-                    </div>
-                    <h3>Learn more about our programs</h3>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3">
-                            <p>
-                                We put big company benefits in place that were not offered before
-                            </p>
-                            <a class="btn btn-large btn-clear" href="#">Learn More Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!--<div class="da-img"><img src="images/4.png" alt="image01" /></div>-->
+        </div>
+        <div class="da-slide" id="demoslide">
+            <h2> Demo time</h2>
 
 
-        <!-- footer-3 -->
-        <footer class="footer-3">
-            <div class="container">
-                <div class="row v-center">
-                    <div class="col-sm-2">
-                        <a class="brand" href="#">Startup</a>
-                    </div>
-                    <div class="col-sm-7">
-                        <div class="additional-links">
-                            Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <h6>ACA Insurance Group</h6>
-                        <div class="address">
-                            10 Strecker Ave, Suite 1090<br>Ellisville, MO 63012<br>Phone: 314-779-4722<br>FAX: 314-338-6757
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+            <!--<div class="da-img"><img src="images/4.png" alt="image01" /></div>-->
+        </div>
+
+        <nav class="da-arrows">
+            <span class="da-arrows-prev" id="previousslide" onclick="decrement()"> </span>
+            <span class="da-arrows-next" id="nextslide" onclick="changeActive()"></span>
+        </nav>
     </div>
+</div>
 
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/common-files/js/jquery-1.10.2.min.js"></script>
-    <script src="/flat-ui/js/bootstrap.min.js"></script>
-    <script src="/common-files/js/modernizr.custom.js"></script>
-    <script src="/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-    <script src="/common-files/js/jquery.parallax.min.js"></script>
-    <script src="/common-files/js/startup-kit.js"></script>
-    <script src="/common-files/js/jquery.backgroundvideo.min.js"></script>
-    <script src="/js/script.js"></script>
+<div class="button_container">
+<button class="btn btn-primary" onclick=openInNewTab("")>Configure Router</button> &emsp;&emsp;&emsp;&emsp;
+<button class="btn btn-primary" onclick=openInNewTab("http://www.facebook.com/login")>Facebook Login</button> &emsp;&emsp;&emsp;&emsp;
+<button class="btn btn-primary" onclick=openInNewTab("http://mygateway.umsl.edu")>Umsl Login</button> &emsp;&emsp;&emsp;&emsp;
+</div>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cslider.js"></script>
+<script type="text/javascript" src="js/progressbar.js"></script>
+<script type="text/javascript" src="js/link.js"></script>
+<script type="text/javascript">
+    $(function() {
 
+        $('#da-slider').cslider();
+
+    });
+</script>
 </body>
 </html>
