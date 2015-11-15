@@ -105,8 +105,13 @@ function time() {
 	$("time").each(function(){
 		$(this).text($.timeago($(this).attr('title')));
 	});
+	var objDiv = document.getElementById("chatEntries");
+	objDiv.scrollTop = objDiv.scrollHeight;
 }
 function setHeight() {
 	$(".slimScrollDiv").height('603');
 	$(".slimScrollDiv").css('overflow', 'visible')
 }
+
+
+
