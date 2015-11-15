@@ -2,7 +2,9 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     app = express(),
     morgan       = require('morgan'),
-    cookieParser = require('cookie-parser');
+    cookieParser = require('cookie-parser'),
+    http = require('http').Server(app),
+    io = require('socket.io')(http);
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -25,7 +27,17 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/chat', function(req, res){
+    res.render('pages/chat');
+});
 
-app.listen(app.get('port'), function() {
+io.on('connection', function(socket){
+    socket.on('chat message', function(msg){
+        io.emit('chat message', msg);
+    });
+});
+
+
+http.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
