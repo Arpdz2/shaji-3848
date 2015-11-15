@@ -61,7 +61,7 @@ io.sockets.on('connection', function (socket) { // First connection
         {
             if (socket.nickname){
                 var pseudo;
-                pseudo = socket.nickname;;
+                pseudo = socket.nickname;
                 var index = pseudoArray.indexOf(pseudo);
                 pseudoArray.splice(index, 1);
                 console.log(pseudoArray);
