@@ -49,7 +49,7 @@ io.sockets.on('connection', function (socket) { // First connection
     var socketId = socket.id;
     //client ip
     var clientIp = socket.request.connection.remoteAddress;
-    console.log(socket.request.connection);
+    console.log(clientIp);
 
     users += 1; // Add 1 to the count
     reloadUsers(); // Send the count to all the users
