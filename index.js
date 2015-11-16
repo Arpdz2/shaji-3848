@@ -46,10 +46,6 @@ var pseudoArray = ['admin'];
 var users = 0; //count the users
 
 io.sockets.on('connection', function (socket) { // First connection
-    var clientIpAddress= socket.request.connection._peername;
-    console.log("**************");
-    console.log(clientIpAddress);
-    console.log("**************");
     users += 1; // Add 1 to the count
     reloadUsers(); // Send the count to all the users
     socket.on('message', function (data) { // Broadcast the message to all
