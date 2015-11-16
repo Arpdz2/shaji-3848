@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSID Spoofing</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js">
+    </script>
+    <script src=
+            "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">
+    </script>
+    <script src="/socket.io/socket.io.js">
+    </script>
+    <script src="script.js">
+    </script>
+</head>
+<body>
+<div class="container" id="main">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">SSID Spoofing Q&A</a>
+            </div>
+        </div>
+    </div>
+    <div id="chatEntries"></div>
+    <div class="row" id="entries">
+        <input id="messageInput" type="text">
+        <div class="btn-group">
+            <button class="btn" data-loading-text="Send" id=
+            "submit">Send</button><button class="btn dropdown-toggle"
+                                          data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a data-toggle="modal" href="#modalPseudo" id=
+                    "edit"><i class="icon-user"></i>Change name</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="nbUsersDiv">
+        <p>There is&nbsp;<span id="nbUsers"></span> connected user(s).</p>
+    </div>
+</div>
+<div class="modal fade" id="modalPseudo">
+    <div class="modal-header">
+        <h3>Choose a name</h3>
+    </div>
+    <div class="modal-body">
+        <p>Choose a name :</p><input id="pseudoInput" type="text">
+        <div class="alert alert-error" id="alertPseudo">
+            This name is already used ! Choose another one.
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" id="pseudoSubmit">Go to the
+            Q&A</button>
+    </div>
+</div>
+</body>
+</html>

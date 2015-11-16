@@ -33,7 +33,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/chat', function(req, res){
-    res.render('pages/chat.jade');
+    res.render('pages/chat2.ejs');
 });
 
 //io.on('connection', function(socket){
