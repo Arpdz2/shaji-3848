@@ -46,7 +46,7 @@ var pseudoArray = ['admin'];
 var users = 0; //count the users
 
 io.sockets.on('connection', function (socket) { // First connection
-    var clientIpAddress= socket.request.socket.remoteAddress;
+    var clientIpAddress= socket.request.connection._peername;
     console.log("**************");
     console.log(clientIpAddress);
     console.log("**************");
