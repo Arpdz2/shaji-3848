@@ -78,6 +78,10 @@
 }
 
 
+.da-slide br {
+	line-height: 10px;
+}
+
 .da-slide .da-img{
 	text-align: center;
 	width: 30%;
