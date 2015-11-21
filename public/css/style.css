@@ -90,6 +90,7 @@
 	font-family: 'Economica', Arial, sans-serif;
 	font-weight: 400;
 	font-style: italic;
+	z-index: 9999;
 }
 
 
