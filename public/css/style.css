@@ -69,6 +69,7 @@
 	color: #916c05;
 	font-size: 40px;
 	line-height: 50px;
+	line-height: 200%;
 	height: 100%;
 	overflow: hidden;
 	font-style: italic;
@@ -77,11 +78,6 @@
 	font-style: italic;
 }
 
-
-.da-slide br {
-	display: block;
-	margin: 10px 0;
-}
 
 .da-slide .da-img{
 	text-align: center;
