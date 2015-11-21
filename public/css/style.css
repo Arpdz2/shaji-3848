@@ -57,7 +57,7 @@
 	color: #fff;
 	font-size: 66px;
 	width: 50%;
-	top: 60px;
+	top: 40px;
 	white-space: nowrap;
 	z-index: 10;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
@@ -213,6 +213,7 @@
 
 .da-slide-current h2,
 .da-slide-current p,
+.da-slide-current h4,
 .da-slide-current .da-link{
 	left: 10%;
 	opacity: 1;
@@ -238,6 +239,15 @@
 	-ms-animation: fromRightAnim2 0.6s ease-in 0.8s both;
 	animation: fromRightAnim2 0.6s ease-in 0.8s both;
 }
+
+.da-slide-fromright h4{
+	-webkit-animation: fromRightAnim2 0.6s ease-in 0.8s both;
+	-moz-animation: fromRightAnim2 0.6s ease-in 0.8s both;
+	-o-animation: fromRightAnim2 0.6s ease-in 0.8s both;
+	-ms-animation: fromRightAnim2 0.6s ease-in 0.8s both;
+	animation: fromRightAnim2 0.6s ease-in 0.8s both;
+}
+
 .da-slide-fromright .da-link{
 	-webkit-animation: fromRightAnim3 0.4s ease-in 1.2s both;
 	-moz-animation: fromRightAnim3 0.4s ease-in 1.2s both;
@@ -356,6 +366,15 @@
 	-ms-animation: fromLeftAnim2 0.6s ease-in 0.6s both;
 	animation: fromLeftAnim2 0.6s ease-in 0.6s both;
 }
+
+.da-slide-fromleft h4{
+	-webkit-animation: fromLeftAnim2 0.6s ease-in 0.6s both;
+	-moz-animation: fromLeftAnim2 0.6s ease-in 0.6s both;
+	-o-animation: fromLeftAnim2 0.6s ease-in 0.6s both;
+	-ms-animation: fromLeftAnim2 0.6s ease-in 0.6s both;
+	animation: fromLeftAnim2 0.6s ease-in 0.6s both;
+}
+
 .da-slide-fromleft .da-link{
 	-webkit-animation: fromLeftAnim3 0.4s ease-in 1.2s both;
 	-moz-animation: fromLeftAnim3 0.4s ease-in 1.2s both;
@@ -474,6 +493,15 @@
 	-ms-animation: toRightAnim2 0.6s ease-in 0.3s both;
 	animation: toRightAnim2 0.6s ease-in 0.3s both;
 }
+
+.da-slide-toright h4{
+	-webkit-animation: toRightAnim2 0.6s ease-in 0.3s both;
+	-moz-animation: toRightAnim2 0.6s ease-in 0.3s both;
+	-o-animation: toRightAnim2 0.6s ease-in 0.3s both;
+	-ms-animation: toRightAnim2 0.6s ease-in 0.3s both;
+	animation: toRightAnim2 0.6s ease-in 0.3s both;
+}
+
 .da-slide-toright .da-link{
 	-webkit-animation: toRightAnim3 0.4s ease-in both;
 	-moz-animation: toRightAnim3 0.4s ease-in both;
@@ -597,6 +625,15 @@
 	-ms-animation: toLeftAnim2 0.6s ease-in 0.3s both;
 	animation: toLeftAnim2 0.6s ease-in 0.3s both;
 }
+
+.da-slide-toleft h4{
+	-webkit-animation: toLeftAnim2 0.6s ease-in 0.3s both;
+	-moz-animation: toLeftAnim2 0.6s ease-in 0.3s both;
+	-o-animation: toLeftAnim2 0.6s ease-in 0.3s both;
+	-ms-animation: toLeftAnim2 0.6s ease-in 0.3s both;
+	animation: toLeftAnim2 0.6s ease-in 0.3s both;
+}
+
 .da-slide-toleft .da-link{
 	-webkit-animation: toLeftAnim3 0.4s ease-in both;
 	-moz-animation: toLeftAnim3 0.4s ease-in both;
