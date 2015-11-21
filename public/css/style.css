@@ -79,7 +79,8 @@
 
 
 .da-slide br {
-	line-height: -20px;
+	display: block;
+	margin: 10px 0;
 }
 
 .da-slide .da-img{
