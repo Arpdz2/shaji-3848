@@ -76,6 +76,11 @@
 	font-weight: 400;
 	font-style: italic;
 }
+
+.da-slide br {
+	line-height: 150%;
+}
+
 .da-slide .da-img{
 	text-align: center;
 	width: 30%;
