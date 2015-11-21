@@ -40,7 +40,7 @@
 .da-slide .da-img{
 	position: absolute;
 	opacity: 0;
-	left: 110%;
+	left: 140%;
 }
 .da-slider-fb .da-slide h2,
 .da-slider-fb .da-slide p,
@@ -50,7 +50,7 @@
 	opacity: 1;
 }
 .da-slider-fb .da-slide .da-img{
-	left: 60%;
+	left: 80%;
 	opacity: 1;
 }
 .da-slide h2{
